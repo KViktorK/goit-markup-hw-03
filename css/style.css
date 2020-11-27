@@ -76,11 +76,25 @@ header {
   letter-spacing: 0.02em;
   margin-bottom: 32px;
 }
+.header-box {
+  display: flex;
+  align-items: center;
+}
 /* Цвет и ховери ссылок */
 
 /* SAIT-nav */
+.sait-nav {
+  display: flex;
+  margin-left: 94px;
+}
+.sait-nav .item + .item {
+  margin-left: 50px;
+}
 .sait-nav a {
+  display: block;
+
   color: var(--title-text-color);
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -92,6 +106,13 @@ header {
 }
 
 /* LINK-header */
+.link-header {
+  display: flex;
+  margin-left: auto;
+}
+.link-header .item + .item {
+  margin-left: 50px;
+}
 .link-header a {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -123,10 +144,16 @@ header {
 .link-footer .link a {
   color: var(--footer-link-color);
 }
+.link-footer .link {
+  margin-top: 9px;
+}
+.link-footer {
+  margin-top: 20px;
+}
 
 /* CONTAINER */
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -140,13 +167,14 @@ header {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  margin: 0px;
+  margin-top: 0px;
   margin-bottom: 30px;
 }
 .hero {
   background-color: var(--hero-background);
   letter-spacing: 0.06em;
   text-align: center;
+  margin-top: 0px;
   margin-bottom: 94px;
 }
 .hero .link {
@@ -166,13 +194,22 @@ header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  margin: 0px;
+  text-align: center;
+
+  margin-top: 0px;
   margin-bottom: 50px;
 }
 .section {
   padding-bottom: 94px;
 }
 /* Advantage-приемущества */
+.advantage-box {
+  display: flex;
+  justify-content: space-around;
+}
+.advantage > .item + .item {
+  margin-left: 30px;
+}
 .advantage .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -185,24 +222,47 @@ header {
   font-size: 14px;
   line-height: 1.7;
   margin: 0px;
+  text-align: left;
+}
+/* what-we-do */
+.what-do-box {
+  display: flex;
+}
+.what-do-box > .item {
+  justify-content: space-around;
+}
+.what-do-box > .item + .item {
+  margin-left: 30px;
 }
 
-/* People-люди */
-.people .name {
+/* Team-команда */
+.team-box {
+  display: flex;
+}
+.team-box > .item {
+  justify-content: space-between;
+}
+.team > .item + .item {
+  margin-left: 30px;
+}
+
+.team .name {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   margin: 0px;
   margin-bottom: 10px;
+  text-align: center;
 }
-.people-img {
+.team-img {
   margin-bottom: 30px;
 }
-.people .work {
+.team .work {
   font-size: 16px;
   line-height: 1.2;
   margin: 0px;
+  text-align: center;
 }
 .section-team {
   background-color: var(--team-background);
