@@ -13,12 +13,13 @@
 /* Текст Raleway 700  sans-serif*/
 
 /* Изменяем на тип блока бордер-бокс */
-html {
-  box-sizing: border-box;
-}
+
 *,
 *::before,
 *::after {
+  box-sizing: border-box;
+}
+html {
   box-sizing: inherit;
 }
 :root {
@@ -73,8 +74,9 @@ ul {
 
 /* Header */
 header {
+  height: 80px;
   letter-spacing: 0.02em;
-  margin-bottom: 32px;
+  border-bottom: 1px solid #ececec;
 }
 .header-box {
   display: flex;
@@ -135,7 +137,13 @@ header {
 }
 
 /* Footer */
+.container.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .footer {
+  height: 252px;
+
   color: var(--white-color);
   background-color: var(--footer-background);
   font-size: 14px;
@@ -162,6 +170,20 @@ header {
 
 /* INDEX.HTML */
 /* Hero */
+.hero {
+  height: 600px;
+  margin-top: 0px;
+  margin-bottom: 94px;
+
+  background-color: var(--hero-background);
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+.container.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero-title {
   color: var(--white-color);
   font-weight: 900;
@@ -170,13 +192,7 @@ header {
   margin-top: 0px;
   margin-bottom: 30px;
 }
-.hero {
-  background-color: var(--hero-background);
-  letter-spacing: 0.06em;
-  text-align: center;
-  margin-top: 0px;
-  margin-bottom: 94px;
-}
+
 .hero .link {
   color: var(--white-color);
   background-color: var(--accent-color);
@@ -222,7 +238,6 @@ header {
   font-size: 14px;
   line-height: 1.7;
   margin: 0px;
-  text-align: left;
 }
 /* what-we-do */
 .what-do-box {
@@ -271,7 +286,14 @@ header {
 /* PORTFOLIO.HTML */
 /* Filter-фыльтри */
 .filter {
-  margin-bottom: 50px;
+  display: flex;
+  margin-bottom: 34px;
+  margin-top: 79px;
+  justify-content: center;
+}
+
+.filter .item + .item {
+  margin-left: 8px;
 }
 .filter-title {
   color: var(--title-text-color);
@@ -294,9 +316,24 @@ header {
   border-radius: 4px;
 }
 /* Project */
+.project-box {
+  display: flex;
+}
 .project {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+
   letter-spacing: 0.06em;
 }
+
+.project .item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
 .project .title {
   color: var(--title-text-color);
   font-weight: 700;
