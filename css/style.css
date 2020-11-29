@@ -94,6 +94,8 @@ header {
 }
 .sait-nav a {
   display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   color: var(--title-text-color);
 
@@ -116,6 +118,9 @@ header {
   margin-left: 50px;
 }
 .link-header a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
