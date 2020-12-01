@@ -295,8 +295,8 @@ header {
 /* Filter-фыльтри */
 .filter {
   display: flex;
-  margin-bottom: 34px;
-  margin-top: 79px;
+  padding-bottom: 34px;
+  padding-top: 79px;
   justify-content: center;
 }
 
