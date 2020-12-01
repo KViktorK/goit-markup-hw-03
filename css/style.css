@@ -216,13 +216,16 @@ header {
   line-height: 1.16;
   text-align: center;
 
-  margin-top: 0px;
-  margin-bottom: 50px;
+  margin: 0px;
+  padding-bottom: 50px;
 }
 .section {
   padding-bottom: 94px;
 }
 /* Advantage-приемущества */
+.section.advantage {
+  padding-top: 94px;
+}
 .advantage-box {
   display: flex;
   justify-content: space-around;
@@ -237,7 +240,6 @@ header {
   line-height: 1.14;
   margin: 0px;
   margin-bottom: 10px;
-  padding-top: 94px;
 }
 .advantage .text {
   font-size: 14px;
@@ -265,9 +267,6 @@ header {
 .team > .item + .item {
   margin-left: 30px;
 }
-.section-team .section-title {
-  padding-top: 94px;
-}
 
 .team .name {
   color: var(--title-text-color);
@@ -289,6 +288,7 @@ header {
 }
 .section-team {
   background-color: var(--team-background);
+  padding-top: 94px;
 }
 
 /* PORTFOLIO.HTML */
