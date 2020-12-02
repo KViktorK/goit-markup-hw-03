@@ -73,6 +73,12 @@ ul {
 }
 
 /* Header */
+.portfolio-visited .link:visited {
+  color: var(--accent-color);
+}
+.index-visited .link:visited {
+  color: var(--accent-color);
+}
 header {
   height: 80px;
   letter-spacing: 0.02em;
@@ -85,9 +91,11 @@ header {
 /* Цвет и ховери ссылок */
 
 /* SAIT-nav */
+.nav {
+  margin-left: 94px;
+}
 .sait-nav {
   display: flex;
-  margin-left: 94px;
 }
 .sait-nav .item + .item {
   margin-left: 50px;
@@ -148,7 +156,6 @@ header {
 }
 .footer {
   height: 252px;
-
   color: var(--white-color);
   background-color: var(--footer-background);
   font-size: 14px;
